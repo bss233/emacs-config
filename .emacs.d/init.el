@@ -39,6 +39,15 @@
 	 :config
 	 (setq evil-magic '(very-magic)))
 
+        (use-package web-mode
+	  :ensure t)
+
+        (use-package js2-mode
+	  :ensure t)
+
+        (use-package emmet-mode
+	  :ensure t)
+
 	 (require 'doom-dracula-theme)
 	 ;;(load-theme 'doom-dracula)
 
@@ -101,7 +110,7 @@
  '(initial-frame-alist (quote ((fullscreen . maximized))))
  '(package-selected-packages
    (quote
-    (magit evil-visualstar general use-package restart-emacs evil-collection doom-themes))))
+    (js2-mode web-mode racket-mode magit evil-visualstar general use-package restart-emacs evil-collection doom-themes))))
 	
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
